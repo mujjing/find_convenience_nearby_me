@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D997ABAF5C922F08D71A1791 /* Pods_FindCVS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4DC89111DFA9B28339D150 /* Pods_FindCVS.framework */; };
+		DBFA12792748E9B400AF5E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12782748E9B400AF5E26 /* AppDelegate.swift */; };
+		DBFA127B2748E9B400AF5E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA127A2748E9B400AF5E26 /* SceneDelegate.swift */; };
+		DBFA12822748E9B600AF5E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFA12812748E9B600AF5E26 /* Assets.xcassets */; };
+		DBFA12852748E9B600AF5E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA12832748E9B600AF5E26 /* LaunchScreen.storyboard */; };
+		DBFA12912748ECCD00AF5E26 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA12902748ECCD00AF5E26 /* DaumMap.framework */; };
+		DBFA12932748ECEF00AF5E26 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA12922748ECEF00AF5E26 /* OpenGLES.framework */; };
+		DBFA12952748ECF800AF5E26 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA12942748ECF800AF5E26 /* SystemConfiguration.framework */; };
+		DBFA12972748ED0800AF5E26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA12962748ED0800AF5E26 /* CoreLocation.framework */; };
+		DBFA12992748ED1700AF5E26 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA12982748ED1700AF5E26 /* QuartzCore.framework */; };
+		DBFA129B2748ED3200AF5E26 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA129A2748ED3200AF5E26 /* libc++.tbd */; };
+		DBFA129D2748ED3C00AF5E26 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA129C2748ED3C00AF5E26 /* libxml2.tbd */; };
+		DBFA129F2748ED4500AF5E26 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA129E2748ED4500AF5E26 /* libsqlite3.tbd */; };
+		DBFA12A22748EE6200AF5E26 /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12A12748EE6200AF5E26 /* LocationData.swift */; };
+		DBFA12A42748F1BF00AF5E26 /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12A32748F1BF00AF5E26 /* DetailListCellData.swift */; };
+		DBFA12A72748F29400AF5E26 /* LocationInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12A62748F29400AF5E26 /* LocationInformationViewController.swift */; };
+		DBFA12A92748F2C100AF5E26 /* LocationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12A82748F2C100AF5E26 /* LocationInformationViewModel.swift */; };
+		DBFA12AB274907A600AF5E26 /* MTMapViewError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12AA274907A600AF5E26 /* MTMapViewError.swift */; };
+		DBFA12AD27490BD200AF5E26 /* DetailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12AC27490BD200AF5E26 /* DetailListCell.swift */; };
+		DBFA12AF274910EF00AF5E26 /* DetailListBackgroundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12AE274910EF00AF5E26 /* DetailListBackgroundViewModel.swift */; };
+		DBFA12B12749147400AF5E26 /* DetailListBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA12B02749147400AF5E26 /* DetailListBackgroundView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A4DC89111DFA9B28339D150 /* Pods_FindCVS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCVS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60247CF2BC733ADDD2FC9F4A /* Pods-FindCVS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCVS.debug.xcconfig"; path = "Target Support Files/Pods-FindCVS/Pods-FindCVS.debug.xcconfig"; sourceTree = "<group>"; };
+		B928427B9FD3C1F544454FDB /* Pods-FindCVS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCVS.release.xcconfig"; path = "Target Support Files/Pods-FindCVS/Pods-FindCVS.release.xcconfig"; sourceTree = "<group>"; };
+		DBFA12752748E9B400AF5E26 /* FindCVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFA12782748E9B400AF5E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBFA127A2748E9B400AF5E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DBFA12812748E9B600AF5E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBFA12842748E9B600AF5E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBFA12862748E9B600AF5E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFA128D2748EC5500AF5E26 /* DaumMap.embeddedframework */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DaumMap.embeddedframework; sourceTree = "<group>"; };
+		DBFA128E2748EC8800AF5E26 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		DBFA12902748ECCD00AF5E26 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DaumMap.framework; path = DaumMap.embeddedframework/DaumMap.framework; sourceTree = "<group>"; };
+		DBFA12922748ECEF00AF5E26 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DBFA12942748ECF800AF5E26 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DBFA12962748ED0800AF5E26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DBFA12982748ED1700AF5E26 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DBFA129A2748ED3200AF5E26 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		DBFA129C2748ED3C00AF5E26 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		DBFA129E2748ED4500AF5E26 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DBFA12A12748EE6200AF5E26 /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		DBFA12A32748F1BF00AF5E26 /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
+		DBFA12A62748F29400AF5E26 /* LocationInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewController.swift; sourceTree = "<group>"; };
+		DBFA12A82748F2C100AF5E26 /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
+		DBFA12AA274907A600AF5E26 /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
+		DBFA12AC27490BD200AF5E26 /* DetailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCell.swift; sourceTree = "<group>"; };
+		DBFA12AE274910EF00AF5E26 /* DetailListBackgroundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundViewModel.swift; sourceTree = "<group>"; };
+		DBFA12B02749147400AF5E26 /* DetailListBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListBackgroundView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBFA12722748E9B400AF5E26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFA129F2748ED4500AF5E26 /* libsqlite3.tbd in Frameworks */,
+				DBFA129D2748ED3C00AF5E26 /* libxml2.tbd in Frameworks */,
+				DBFA129B2748ED3200AF5E26 /* libc++.tbd in Frameworks */,
+				DBFA12992748ED1700AF5E26 /* QuartzCore.framework in Frameworks */,
+				DBFA12972748ED0800AF5E26 /* CoreLocation.framework in Frameworks */,
+				DBFA12952748ECF800AF5E26 /* SystemConfiguration.framework in Frameworks */,
+				DBFA12932748ECEF00AF5E26 /* OpenGLES.framework in Frameworks */,
+				DBFA12912748ECCD00AF5E26 /* DaumMap.framework in Frameworks */,
+				D997ABAF5C922F08D71A1791 /* Pods_FindCVS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91FCB8B15FEF11AFD19568BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60247CF2BC733ADDD2FC9F4A /* Pods-FindCVS.debug.xcconfig */,
+				B928427B9FD3C1F544454FDB /* Pods-FindCVS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DBFA126C2748E9B400AF5E26 = {
+			isa = PBXGroup;
+			children = (
+				DBFA12772748E9B400AF5E26 /* FindCVS */,
+				DBFA12762748E9B400AF5E26 /* Products */,
+				DBFA128C2748EC5400AF5E26 /* Frameworks */,
+				91FCB8B15FEF11AFD19568BE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DBFA12762748E9B400AF5E26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA12752748E9B400AF5E26 /* FindCVS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBFA12772748E9B400AF5E26 /* FindCVS */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA12A52748F26F00AF5E26 /* Scene */,
+				DBFA12A02748EE5000AF5E26 /* Entities */,
+				DBFA12782748E9B400AF5E26 /* AppDelegate.swift */,
+				DBFA127A2748E9B400AF5E26 /* SceneDelegate.swift */,
+				DBFA12812748E9B600AF5E26 /* Assets.xcassets */,
+				DBFA12832748E9B600AF5E26 /* LaunchScreen.storyboard */,
+				DBFA12862748E9B600AF5E26 /* Info.plist */,
+				DBFA128E2748EC8800AF5E26 /* BridgingHeader.h */,
+			);
+			path = FindCVS;
+			sourceTree = "<group>";
+		};
+		DBFA128C2748EC5400AF5E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA129E2748ED4500AF5E26 /* libsqlite3.tbd */,
+				DBFA129C2748ED3C00AF5E26 /* libxml2.tbd */,
+				DBFA129A2748ED3200AF5E26 /* libc++.tbd */,
+				DBFA12982748ED1700AF5E26 /* QuartzCore.framework */,
+				DBFA12962748ED0800AF5E26 /* CoreLocation.framework */,
+				DBFA12942748ECF800AF5E26 /* SystemConfiguration.framework */,
+				DBFA12922748ECEF00AF5E26 /* OpenGLES.framework */,
+				DBFA12902748ECCD00AF5E26 /* DaumMap.framework */,
+				DBFA128D2748EC5500AF5E26 /* DaumMap.embeddedframework */,
+				5A4DC89111DFA9B28339D150 /* Pods_FindCVS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBFA12A02748EE5000AF5E26 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA12A12748EE6200AF5E26 /* LocationData.swift */,
+				DBFA12A32748F1BF00AF5E26 /* DetailListCellData.swift */,
+				DBFA12AA274907A600AF5E26 /* MTMapViewError.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DBFA12A52748F26F00AF5E26 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA12A62748F29400AF5E26 /* LocationInformationViewController.swift */,
+				DBFA12A82748F2C100AF5E26 /* LocationInformationViewModel.swift */,
+				DBFA12AC27490BD200AF5E26 /* DetailListCell.swift */,
+				DBFA12AE274910EF00AF5E26 /* DetailListBackgroundViewModel.swift */,
+				DBFA12B02749147400AF5E26 /* DetailListBackgroundView.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBFA12742748E9B400AF5E26 /* FindCVS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBFA12892748E9B600AF5E26 /* Build configuration list for PBXNativeTarget "FindCVS" */;
+			buildPhases = (
+				36C9235390D305306635F30F /* [CP] Check Pods Manifest.lock */,
+				DBFA12712748E9B400AF5E26 /* Sources */,
+				DBFA12722748E9B400AF5E26 /* Frameworks */,
+				DBFA12732748E9B400AF5E26 /* Resources */,
+				998118BCE1ECBA6CBE546249 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindCVS;
+			productName = FindCVS;
+			productReference = DBFA12752748E9B400AF5E26 /* FindCVS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBFA126D2748E9B400AF5E26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					DBFA12742748E9B400AF5E26 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = DBFA12702748E9B400AF5E26 /* Build configuration list for PBXProject "FindCVS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBFA126C2748E9B400AF5E26;
+			productRefGroup = DBFA12762748E9B400AF5E26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBFA12742748E9B400AF5E26 /* FindCVS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBFA12732748E9B400AF5E26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFA12852748E9B600AF5E26 /* LaunchScreen.storyboard in Resources */,
+				DBFA12822748E9B600AF5E26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36C9235390D305306635F30F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindCVS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		998118BCE1ECBA6CBE546249 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindCVS/Pods-FindCVS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindCVS/Pods-FindCVS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindCVS/Pods-FindCVS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBFA12712748E9B400AF5E26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBFA12AF274910EF00AF5E26 /* DetailListBackgroundViewModel.swift in Sources */,
+				DBFA12B12749147400AF5E26 /* DetailListBackgroundView.swift in Sources */,
+				DBFA12A92748F2C100AF5E26 /* LocationInformationViewModel.swift in Sources */,
+				DBFA12AB274907A600AF5E26 /* MTMapViewError.swift in Sources */,
+				DBFA12A22748EE6200AF5E26 /* LocationData.swift in Sources */,
+				DBFA12A72748F29400AF5E26 /* LocationInformationViewController.swift in Sources */,
+				DBFA12792748E9B400AF5E26 /* AppDelegate.swift in Sources */,
+				DBFA12A42748F1BF00AF5E26 /* DetailListCellData.swift in Sources */,
+				DBFA12AD27490BD200AF5E26 /* DetailListCell.swift in Sources */,
+				DBFA127B2748E9B400AF5E26 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBFA12832748E9B600AF5E26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBFA12842748E9B600AF5E26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBFA12872748E9B600AF5E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBFA12882748E9B600AF5E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBFA128A2748E9B600AF5E26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60247CF2BC733ADDD2FC9F4A /* Pods-FindCVS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58P548H5HJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindCVS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.FindCVS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/jeonjihun/find_convenience_nearby_me/FindCVS/FindCVS/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DBFA128B2748E9B600AF5E26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B928427B9FD3C1F544454FDB /* Pods-FindCVS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58P548H5HJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DaumMap.embeddedframework",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindCVS/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jh.FindCVS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/jeonjihun/find_convenience_nearby_me/FindCVS/FindCVS/BridgingHeader.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBFA12702748E9B400AF5E26 /* Build configuration list for PBXProject "FindCVS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBFA12872748E9B600AF5E26 /* Debug */,
+				DBFA12882748E9B600AF5E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBFA12892748E9B600AF5E26 /* Build configuration list for PBXNativeTarget "FindCVS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBFA128A2748E9B600AF5E26 /* Debug */,
+				DBFA128B2748E9B600AF5E26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBFA126D2748E9B400AF5E26 /* Project object */;
+}
