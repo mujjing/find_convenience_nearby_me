@@ -28,7 +28,7 @@ class DetailListCell: UITableViewCell {
         
         placeNameLabel.text = data.placeName
         addressLabel.text = data.address
-        distanceLabel.text = data.distance
+        distanceLabel.text = "\(data.distance) 미터"
         
     }
     private func attribute() {
